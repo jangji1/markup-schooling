@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8" />
+	<title>유료 학습신청</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+	<script src="/assets/lib/jquery/jquery-2.2.4.min.js"></script>
+	<script src="/assets/js/app.js"></script>
+	<script src="/assets/js/ui.js"></script>
+	<link rel="stylesheet" type="text/css" href="/assets/font/font.css">
+	<link rel="stylesheet" type="text/css" href="/assets/css/common.css">
+	<link rel="stylesheet" type="text/css" href="/assets/css/layout.css">
+</head>
+<body>
+	<!-- 헤더 -->
+	<header class="header">
+		<div class="global">
+			<div class="innertube cf">
+				<p class="favorite"><a href="#">즐겨찾기 추가하기</a><p>
+				<ul class="gnb">
+					<li class="welcome"><strong class="username">하은경</strong>님 안녕하세요!</li>
+					<li class="logout"><a href="#">로그아웃</a></li>
+					<li class="mypage"><a href="">마이페이지</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="navbar">
+			<div class="innertube cf">
+				<h1 class="logo_schooling"><a href="#"><img src="/assets/images/header/logo_schooling.png" alt="친절한 Schooling" /></a></h1>
+				<nav class="lnb">
+					<ul>
+						<li class="menu"><a href="#" class="menu_item"><span class="menu_item-name">스쿨링이란?</span></a></li>
+						<li class="menu"><a href="#" class="menu_item"><span class="menu_item-name">학습자료실</span></a></li>
+						<li class="menu"><a href="#" class="menu_item"><span class="menu_item-name">고객센터</span></a></li>
+						<li class="menu"><a href="#" class="menu_item"><span class="menu_item-name">스쿨링 신청</span></a></li>
+					</ul>
+				</nav>
+				<h1 class="logo_homelearn"><a href="#"><img src="/assets/images/header/logo_homelearn.png" alt="아이스크림홈런 바로가기" /></a></h1>
+			</div>
+		</div>
+	</header>
+	<!-- // 헤더 -->
+	
+	<section class="container">
+		<div class="innertube cf">
+			<ul class="banners">
+				<li>
+					<a href="#">
+						<span class="title">무료체험</span>
+						<span class="summary">정회원과 동일한 학습<br>누구나 신청 가능</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="title">학습신청</span>
+						<span class="summary">학생들이 먼저 인정한<br>친절한 스쿨링</span>
+					</a>
+				</li>
+				<li><a href="#">기간 연장 신청 &gt;</a></li>
+				<li><a href="#">자녀 정보 등록 &gt;</a></li>
+			</ul>
+			<button type="button" class="btn btn_up"></button>
+			
+			<nav class="snb">
+				<h2>마이페이지</h2>
+				<ul class="sub">
+					<li><a href="#"><span>결제정보</span></a></li>
+					<li class="on"><a href="#"><span>회원정보 수정</span></a></li>
+					<li><a href="#"><span>회원탈퇴</span></a></li>
+				</ul>
+				<div class="tel">
+					<p class="telnumber"><img src="/assets/images/contents/txt_center.png" alt="고객센터 1544-0910" /></p>
+					<p>평일 : am10시-pm10시</p>
+					<p>토요일 : am10시-pm5시</p>
+				</div>
+			</nav>
+			
+			<div class="content">
+				<p class="location"><img src="/assets/images/contents/ico_home.png" alt="Home" /> &gt; 마이페이지 &gt; 회원정보 수정</p>
+				<h1><span>회원정보 수정</span></h1>
+				<p class="summary">회원님의 개인정보는 개인정보취급방침에 따라 안전하게 보호됩니다.</p>
+				<div class="cont mypage modify">
+					<table class="board">
+						<colgroup>
+							<col width="17%">
+							<col />
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>이름</th>
+								<td><input type="text" class="w293" value="홍길동" disabled /></td>
+							</tr>
+							<tr>
+								<th>아이디</th>
+								<td><input type="text" class="w293" value="dyuran1234" disabled /></td>
+							</tr>
+							<tr>
+								<th>비밀번호</th>
+								<td><input type="text" class="w293" placeholder="비밀번호 입력" /><button type="button" class="btn btn_form w120 ml10 layer" data-target="#pop_changepass">비밀번호 변경</button>
+								<p class="important txt_red">※ 숫자 및 영문을 연속으로 동일하게 입력하지 마세요.</p></td>
+							</tr>
+							<tr>
+								<th>전화번호</th>
+								<td>
+									<div class="select-style1 option1 w88 mr10">
+										<select name="" id="">
+											<option value="">02</option>
+										</select>
+									</div>-<input type="text" class="w88 ml10 mr10" value="5678" />-<input type="text" class="w88 ml10" value="5678" />
+								</td>
+							</tr>
+							<tr>
+								<th>휴대전화</th>
+								<td>
+									<div class="select-style1 option1 w88 mr10">
+										<select name="" id="">
+											<option value="">010</option>
+										</select>
+									</div>-<input type="text" class="w88 ml10 mr10" value="5678" />-<input type="text" class="w88 ml10" value="5678" /><button type="button" class="btn btn_form w88 ml10 layer" data-target="#pop_sms" disabled>인증하기</button>
+									<ul class="select_radio">
+										<li class="mt10">
+											<label class="custom_input"> SMS 수신 동의 (학습관련 주요정보 및 이벤트 정보 등의 문자를 수신)
+												<input type="radio" name="radio" checked>
+												<span class="radiobtn"></span>
+											</label>
+										</li>
+										<li class="mt10">
+											<label class="custom_input"> SMS 동의 하지 않음
+												<input type="radio" name="radio">
+												<span class="radiobtn"></span>
+											</label>
+										</li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<th>이메일</th>
+								<td>
+									<input type="text" class="w156 mr10" value="kindschool1004" />@<input type="text" class="w156 ml10" value="sigongeducation.co.kr" /><div class="select-style1 option1 w144 ml10">
+										<select name="" id="">
+											<option value="">직접입력</option>
+										</select>
+									</div>
+									<ul class="select_radio">
+										<li class="mt10">
+											<label class="custom_input"> 최신교육뉴스, 이벤트 정보 등의 이메일 수신 동의
+												<input type="radio" name="radio2" checked>
+												<span class="radiobtn"></span>
+											</label>
+										</li>
+										<li class="mt10">
+											<label class="custom_input"> 이메일 수신 동의 하지 않음
+												<input type="radio" name="radio2">
+												<span class="radiobtn"></span>
+											</label>
+										</li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<th>주소</th>
+								<td>
+									<div class="addr1">
+										<input type="text" class="w88" value="03995" /><button type="button" class="btn btn_form w88 ml10">우편번호</button>
+									</div>
+									<div class="addr2">
+										<input type="text" class="w293" placeholder="상세주소" value="서울 강남구 영동대로 106길" /><input type="text" class="w293 ml10" value="41번지 동영빌딩 4층" />
+									</div>
+									<p class="important">※ 주소를 수정하실 경우, 학습교재의 정확한 배송을 위해 스쿨링 선생님에게 꼭 알려주시기 바랍니다.</p>
+								</td>
+							</tr>
+							<tr>
+								<th>자녀 정보 <span class="txt_red">*</span></th>
+								<td>
+									<ul class="select_radio">
+										<li class="mb10">
+											<label class="custom_input"> 자녀 있음
+												<input type="radio" name="radio3" checked>
+												<span class="radiobtn"></span>
+											</label>
+										</li>
+										<li>
+											<label class="custom_input"> 자녀 없음
+												<input type="radio" name="radio3">
+												<span class="radiobtn"></span>
+											</label>
+										</li>
+									</ul>
+									
+									<p class="children_news">중학생 자녀의 정보를 정확하게 입력해 주세요.<br>자녀 정보에 따른 이벤트 소식, 지역별 학습 정보 등을 제공해 드립니다.</p>
+									
+									<div class="add_children">
+										<div class="box_add_chidren">
+											<button type="button" class="btn btn_del_children">삭제</button>
+											<table class="board board_children">
+												<colgroup>
+													<col width="10%">
+													<col />
+												</colgroup>
+												<tbody>
+													<tr>
+														<th>자녀 명</th>
+														<td>
+															<input type="text" class="w132" placeholder="자녀 명" value="아이유" disabled><input type="text" class="w240 ml10" placeholder="학교명" value="서울스클링중학교" /><button type="button" class="btn btn_form w88 ml10 layer" data-target="#pop_findschool">학교찾기</button><div class="select-style1 option1 w144 ml10">
+																<select name="" id="">
+																	<option value="">학년 선택</option>
+																</select>
+															</div>
+														</td>
+													</tr>
+													<tr>
+														<th>생년월일</th>
+														<td>
+															<div class="select-style1 option1 w88 mr10">
+																<select name="" id="">
+																	<option value="">년</option>
+																</select>
+															</div>
+															<div class="select-style1 option1 w88 mr10">
+																<select name="" id="">
+																	<option value="">월</option>
+																</select>
+															</div>
+															<div class="select-style1 option1 w88 mr10">
+																<select name="" id="">
+																	<option value="">일</option>
+																</select>
+															</div>
+															<label class="custom_input ml50"> 남
+																<input type="radio" name="children1" checked>
+																<span class="radiobtn"></span>
+															</label><label class="custom_input ml50"> 여
+																<input type="radio" name="children1">
+																<span class="radiobtn"></span>
+															</label>
+														</td>
+													</tr>
+													<tr>
+														<th>휴대전화</th>
+														<td>
+															<div class="select-style1 option1 w88 mr10">
+																<select name="" id="">
+																	<option value="">010</option>
+																</select>
+															</div>-<input type="text" class="w88 ml10 mr10" />-<input type="text" class="w88 ml10" />
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+									<div class="txt_right mt10">
+										<button type="button" class="btn btn_add_children">자녀 추가</button>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					
+					<h2>부가정보</h2>
+					<div class="report">
+						<ul>
+							<li class="choose_path cf">
+								<h3>1. 어떤 경로로 스쿨링을 알게 되셨나요?</h3>
+								<ul>
+									<li>
+										<label class="custom_input mb10"> TV CF
+											<input type="radio" checked="checked" name="radio4">
+											<span class="radiobtn"></span>
+										</label>
+									</li>
+									<li>
+										<label class="custom_input mb10"> 모바일 검색
+											<input type="radio" name="radio4">
+											<span class="radiobtn"></span>
+										</label>
+									</li>
+									<li>
+										<label class="custom_input mb10"> 소셜 커머스(티몬, 쿠팡, 위메프 등)
+											<input type="radio" name="radio4">
+											<span class="radiobtn"></span>
+										</label>
+									</li>
+									<li>
+										<label class="custom_input"> 학교 담임 선생님 추천
+											<input type="radio" name="radio4">
+											<span class="radiobtn"></span>
+										</label>
+									</li>
+								</ul>
+								<ul class="select_path">
+									<li>
+										<label class="custom_input mb10"> PC 검색
+											<input type="radio" name="radio4">
+											<span class="radiobtn"></span>
+										</label>
+									</li>
+									<li>
+										<label class="custom_input mb10"> 홈쇼핑
+											<input type="radio" name="radio4">
+											<span class="radiobtn"></span>
+										</label>
+									</li>
+									<li>
+										<label class="custom_input mb10"> 오픈마켓 (지마켓, 옥션, 11번가, 인터파크 등)
+											<input type="radio" name="radio4">
+											<span class="radiobtn"></span>
+										</label>
+									</li>
+									<li>
+										<label class="custom_input mb10"> 지인소개
+											<input type="radio" name="radio4">
+											<span class="radiobtn"></span>
+										</label>
+									</li>
+									<li>
+										<label class="custom_input"> 기타
+											<input type="radio" name="radio4">
+											<span class="radiobtn"></span>
+										</label>
+									</li>
+								</ul>
+							</li>
+							<li class="choose_subject">
+								<h3>2. 자녀에게 가장 보강이 필요한 공부 과목을 선택 해 주세요. <span class="txt_blue">(복수 선택 가능)</span></h3>
+								<ul class="cf">
+									<li class="on">국어</li>
+									<li class="on">수학</li>
+									<li>영어</li>
+									<li>과학</li>
+									<li>사회</li>
+									<li>역사</li>
+									<li>한자</li>
+									<li>한국사</li>
+									<li>논술</li>
+									<li>미술</li>
+									<li>기타</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					
+					<div class="bottom_modify">
+						<p>※ 주요정책 관련 SMS, 이메일은 수신동의 관계없이 발송 될 수 있습니다.</p>
+						<button type="button" class="btn btn_cancel">취소</button><button type="button" class="btn btn_blue btn_join">저장</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<!-- 푸터 -->
+	<footer class="footer">
+		<div class="innertube cf">
+			<div class="left">
+				<ul class="link">
+					<li><a href="">회사소개</a></li>
+					<li><a href="">이용약관</a></li>
+					<li><a href=""><strong>개인정보처리방침</strong></a></li>
+				</ul>
+				<div class="company">
+					<p class="name"><strong>주식회사 시공교육</strong></p>
+					<address class="address">
+						<p>서울시 강남구 삼성동 영동대로 106길23(삼성동, 중앙빌딩)<i></i>대표 : 박기석<i></i>대표전화 : 1544-0910</p>
+						<p>팩스 : 02-3448-5262<i></i>사업자등록번호 : 120-87-97004</p>
+						<p>통신판매신고번호 : 제2013-서울강남-01379호<i></i>전자출판물인증번호 : I410-ECN-0199-2013-001-002535352</p>
+					</address>
+					<p class="tel">대표전화 : 1544-0910<i></i>팩스(Fax) : 02-3448-5262<i></i>이메일 : <a href="mailto:schoolingmaster@schooling.com">schoolingmaster@schooling.com</a></p>
+					<p class="copyright">Copyright@2017 <strong>Sigong Education Corporation.</strong> ALL RIGHT RESERVED.</p>
+				</div>
+				<div class="select-style2 family">
+					<select name="" id="">
+						<option value="">패밀리 사이트</option>
+					</select>
+				</div>
+				
+			</div>
+			<div class="right">
+				<p class="txt">고객센터</p>
+				<p class="tel">1544-0910</p>
+				<p class="info"><span class="day">평일</span><span class="time">오전 10시~오후 10시</span></p>
+				<p class="info"><span class="day">토요일</span><span class="time">오전 10시~오후 5시</span></p>
+			</div>
+		</div>
+	</footer>
+	<!-- // 푸터 -->
+	
+	<div id="pop_changepass" class="layer-wrap" style="display: block">
+	    <div class="layer-outer">
+	        <div class="layer-inner">
+	            <div class="layer-pop">
+	                <div class="layer-box">
+	                    <h1><span>비밀번호 변경</span></h1>
+	                    <p class="summary">개인정보 보호를 위하여 주기적으로 비밀번호를 변경하시기 바랍니다.</p>
+	                    <div class="check_section">
+	                    	<div class="mb10">
+	                    		<label>기존 비밀번호</label><input type="password" placeholder="현재 비밀번호 입력" />
+	                    	</div>
+                            <div class="mb10">
+	                    		<label>새 비밀번호</label><input type="password" placeholder="새 비밀번호 재입력" />
+	                    	</div>
+	                    	<div>
+	                    		<label>비밀번호 확인</label><input type="password" placeholder="새 비밀번호 재입력" />
+	                    	</div>
+	                    </div>
+	                    <ul class="list">
+	                    	<li class="mb10">※ 영문 또는 숫자 또는 특수문자를 조합하여 10자 이상 입력하세요.</li>
+							<li>※ 아이디와 중복되지 않도록 설정해 주세요.</li>
+	                    </ul>
+	                </div>
+	                <button type="button" class="btn btn_close"></button>
+	                <div class="foot">
+                   		<button type="button" class="btn btn_cancel">다음에</button><button type="button" class="btn btn_next">비밀번호 변경</button>
+                   	</div>
+	            </div>
+	        </div>
+	    </div>
+	    <div class="dimmed"></div>
+	</div>
+	
+	<div id="pop_sms" class="layer-wrap">
+	    <div class="layer-outer">
+	        <div class="layer-inner">
+	            <div class="layer-pop">
+	                <div class="layer-box">
+	                    <h1><span>SMS 인증</span></h1>
+	                    <p class="summary">휴대폰으로 전송된 인증번호 4자리를 입력해 주세요.</p>
+	                    <div class="check_section">
+                            <div class="auth"><input type="text" class="mr10" placeholder="인증번호 입력" /><button type="button" class="btn btn_resend">재발송</button></div>
+							<div class="time"><span class="txt">입력시간 제한:</span> <span class="timer txt_blue">9분 56초</span></div>
+	                    </div>
+	                </div>
+	                <button type="button" class="btn btn_close"></button>
+	                <div class="foot">
+                   		<button type="button" class="btn btn_next">확인</button>
+                   	</div>
+	            </div>
+	        </div>
+	    </div>
+	    <div class="dimmed"></div>
+	</div>
+</body>
+</html>

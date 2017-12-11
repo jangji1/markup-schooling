@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8" />
+	<title>친절한 스쿨링</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+	<script src="/assets/lib/jquery/jquery-2.2.4.min.js"></script>
+	<script src="/assets/js/app.js"></script>
+	<script src="/assets/js/ui.js"></script>
+	<link rel="stylesheet" type="text/css" href="/assets/font/font.css">
+	<link rel="stylesheet" type="text/css" href="/assets/css/common.css">
+	<link rel="stylesheet" type="text/css" href="/assets/css/layout.css">
+</head>
+<body>
+	<!-- 헤더 -->
+	<header class="header">
+		<div class="global">
+			<div class="innertube cf">
+				<p class="favorite"><a href="#">즐겨찾기 추가하기</a><p>
+				<ul class="gnb">
+					<li class="welcome"><strong class="username">하은경</strong>님 안녕하세요!</li>
+					<li class="logout"><a href="#">로그아웃</a></li>
+					<li class="mypage"><a href="">마이페이지</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="navbar">
+			<div class="innertube cf">
+				<h1 class="logo_schooling"><a href="#"><img src="/assets/images/header/logo_schooling.png" alt="친절한 Schooling" /></a></h1>
+				<nav class="lnb">
+					<ul>
+						<li class="menu"><a href="#" class="menu_item"><span class="menu_item-name">스쿨링이란?</span></a></li>
+						<li class="menu"><a href="/studydata/studydata.view" class="menu_item"><span class="menu_item-name">학습자료실</span></a></li>
+						<li class="menu"><a href="/customer/faq.view" class="menu_item"><span class="menu_item-name">고객센터</span></a></li>
+						<li class="menu"><a href="#" class="menu_item"><span class="menu_item-name">스쿨링 신청</span></a></li>
+					</ul>
+				</nav>
+				<h1 class="logo_homelearn"><a href="#"><img src="/assets/images/header/logo_homelearn.png" alt="아이스크림홈런 바로가기" /></a></h1>
+			</div>
+		</div>
+	</header>
+	<!-- // 헤더 -->
+	
+	<section class="container">
+		<div class="innertube cf">
+			<ul class="banners">
+				<li>
+					<a href="#">
+						<span class="title">무료체험</span>
+						<span class="summary">정회원과 동일한 학습<br>누구나 신청 가능</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="title">학습신청</span>
+						<span class="summary">학생들이 먼저 인정한<br>친절한 스쿨링</span>
+					</a>
+				</li>
+				<li><a href="#">기간 연장 신청 &gt;</a></li>
+				<li><a href="#">자녀 정보 등록 &gt;</a></li>
+			</ul>
+			<button type="button" class="btn btn_up"></button>
+			
+			<div class="content login find_id">
+				<div class="left">
+					<h1><span>ID,PW 찾기</span></h1>
+					<p class="summary">회원 가입 시 등록한 이름과 휴대폰 번호로<br>
+					아이디 및 비밀번호를 확인할 수 있습니다.</p>
+					<div class="ad">
+						<img src="/assets/images/contents/temp_banner_google.png" alt="배너" width="100%" />
+					</div>
+				</div>
+				<div class="right">
+					<p class="location"><img src="/assets/images/contents/ico_home.png" alt="Home" /> &gt; 아이디 찾기</p>
+					<div class="cont">
+						<ul class="tab">
+							<li class="current" data-tab="tab1"><a href="#">아이디 찾기</a></li>
+							<li data-tab="tab2"><a href="#">비밀번호 찾기</a></li>
+						</ul>
+						
+						<div id="tab1" class="tabcontent current">
+							<!-- 아이디 찾기 -->
+							<!-- <p class="summary">아이디가 기억나지 않으시나요?<br>휴대폰 인증으로 회원가입 하셨다면 가입 시 등록한 정보를 입력해 주세요. </p>
+							<div class="user_name mb10">
+								<label>이름</label><input type="text" />
+							</div>
+							<div class="user_phone">
+								<label>휴대전화 번호</label><div class="select-style1 option1 w120 mr7">
+									<select name="" id="">
+										<option value="">010</option>
+									</select>
+								</div>-<input type="text" class="w120 ml7 mr7" />-<input type="text" class="w120 ml7" />
+							</div>
+							<div class="bottom">
+								<button type="button" class="btn btn_blue">확인</button>
+							</div> -->
+							<!-- //아이디 찾기 -->
+							
+							<!-- 아이디찾기 결과 -->
+							<div class="box">
+								<div>
+									<div><span class="txt_blue">홍길동</span> 회원님의 아이디는 다음과 같습니다.</div>
+									<div class="reult_id">kind*******</div>
+								</div>
+							</div>
+							<div class="mt10">
+								<button type="button" class="btn btn_login mr10">로그인 하기</button><button type="button" class="btn btn_find_pass">비밀번호 찾기</button>
+							</div>
+							<!-- //아이디찾기 결과 -->
+							
+							<!-- 아이디 찾을수 없을 때 -->
+							<!-- <div class="box">
+								<div class="txt_red">가입된 정보를 찾을 수 없습니다.</div>
+							</div>
+							<div class="mt10">
+								<button type="button" class="btn btn_research mr10">재검색</button><button type="button" class="btn btn_join">회원가입</button>
+							</div> -->
+							<!-- //아이디 찾을수 없을 때 -->
+						</div>
+						
+						<div id="tab2" class="tabcontent">
+							<!-- 비밀번호 찾기 -->
+							<p class="summary">비밀번호가 기억나지 않으시나요?<br>휴대폰 인증으로 회원가입 하셨다면 가입 시 등록한 정보를 입력해 주세요. </p>
+							<div class="user_id mb10">
+								<label>아이디</label><input type="text" />
+							</div>
+							<div class="user_name mb10">
+								<label>이름</label><input type="text" />
+							</div>
+							<div class="user_phone">
+								<label>휴대전화 번호</label><div class="select-style1 option1 w120 mr7">
+									<select name="" id="">
+										<option value="">010</option>
+									</select>
+								</div>-<input type="text" class="w120 ml7 mr7" />-<input type="text" class="w120 ml7" />
+							</div>
+							<div class="bottom">
+								<button type="button" class="btn btn_blue">확인</button>
+							</div>
+							<!-- //비밀번호 찾기 -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<!-- 푸터 -->
+	<footer class="footer">
+		<div class="innertube cf">
+			<div class="left">
+				<ul class="link">
+					<li><a href="">회사소개</a></li>
+					<li><a href="">이용약관</a></li>
+					<li><a href=""><strong>개인정보처리방침</strong></a></li>
+				</ul>
+				<div class="company">
+					<p class="name"><strong>주식회사 시공교육</strong></p>
+					<address class="address">
+						<p>서울시 강남구 삼성동 영동대로 106길23(삼성동, 중앙빌딩)<i></i>대표 : 박기석<i></i>대표전화 : 1544-0910</p>
+						<p>팩스 : 02-3448-5262<i></i>사업자등록번호 : 120-87-97004</p>
+						<p>통신판매신고번호 : 제2013-서울강남-01379호<i></i>전자출판물인증번호 : I410-ECN-0199-2013-001-002535352</p>
+					</address>
+					<p class="tel">대표전화 : 1544-0910<i></i>팩스(Fax) : 02-3448-5262<i></i>이메일 : <a href="mailto:schoolingmaster@schooling.com">schoolingmaster@schooling.com</a></p>
+					<p class="copyright">Copyright@2017 <strong>Sigong Education Corporation.</strong> ALL RIGHT RESERVED.</p>
+				</div>
+				<div class="select-style2 family">
+					<select name="" id="">
+						<option value="">패밀리 사이트</option>
+					</select>
+				</div>
+				
+			</div>
+			<div class="right">
+				<p class="txt">고객센터</p>
+				<p class="tel">1544-0910</p>
+				<p class="info"><span class="day">평일</span><span class="time">오전 10시~오후 10시</span></p>
+				<p class="info"><span class="day">토요일</span><span class="time">오전 10시~오후 5시</span></p>
+			</div>
+		</div>
+	</footer>
+	<!-- // 푸터 -->
+</body>
+</html>
